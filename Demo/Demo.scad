@@ -7,7 +7,8 @@
   */
 
 // this changed from "use" to "include" with v0.3!!!
-include <Chamfers-for-OpenSCAD/Chamfer.scad>;
+/* include <Chamfers-for-OpenSCAD/Chamfer.scad>; */
+include <../../Chamfers-for-OpenSCAD/Chamfer.scad>;
 
 
 // cube demos
@@ -51,11 +52,11 @@ translate([15, 0, -50])    cylinder(h=10, r=5, $fn=circleSegments(5));
   * cube. The chamfers are diectly printable on Fused deposition
   * modelling (FDM) printers without support structures.
   *
-  * @param  size      The size of the cube along the [x, y, z] axis, 
+  * @param  size      The size of the cube along the [x, y, z] axis,
   *                     example: [1, 2, 3]
-  * @param  chamfers  Which chamfers to render along the [x, y, z] axis, 
+  * @param  chamfers  Which chamfers to render along the [x, y, z] axis,
   *                     example: [[0, 0, 0, 0], [1, 1, 1, 1], [0, 0, 0, 0]]
-  *                     X axis: 4 values in clockwise order starting from 
+  *                     X axis: 4 values in clockwise order starting from
   *                     the zero point, as seen from "Left view" (Ctrl + 6)
   *                     Y axis: 4 values in clockwise order starting from
   *                     the zero point, as seen from "Front view" (Ctrl + 8)
@@ -75,10 +76,10 @@ translate([15, 0, -50])    cylinder(h=10, r=5, $fn=circleSegments(5));
   * @param  r    Radius of the cylinder (At the bottom)
   * @param  r2   Radius of the cylinder (At the top)
   * @param  ch   The "height" of the chamfer at radius 1 as
-  *                seen from one of the dimensional planes (The 
+  *                seen from one of the dimensional planes (The
   *                real length is side c in a right angled triangle)
   * @param  ch2  The "height" of the chamfer at radius 2 as
-  *                seen from one of the dimensional planes (The 
+  *                seen from one of the dimensional planes (The
   *                real length is side c in a right angled triangle)
   * @param  a    The angle of the visible part of a wedge
   *                starting from the x axis counter-clockwise
@@ -100,4 +101,3 @@ translate([15, 0, -50])    cylinder(h=10, r=5, $fn=circleSegments(5));
   * @return  The number of segments for the circle
   *
   */
- 
